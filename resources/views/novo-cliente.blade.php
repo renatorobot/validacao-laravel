@@ -24,7 +24,14 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="nome">Nome do Cliente</label>
-                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do cliente">
+                                    <input type="text" id="nome" name="nome" class="form-control
+                                    {{$errors->has('nome') ? 'is-invalid' : ''}}
+                                    " placeholder="Nome do cliente">
+                                @if ($errors->has('nome'))
+                                    <div class="invalid-feedback">
+                                        {{$errors->first('nome')}}
+                                    </div>
+                                @endif
                                 </div>
                                 <div class="form-group">
                                     <label for="idade">Idade do Cliente</label>
