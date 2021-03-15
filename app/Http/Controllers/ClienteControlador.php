@@ -38,7 +38,7 @@ class ClienteControlador extends Controller
     {
 
         $request->validate([
-            'nome' => 'required | min:5 | max:10',
+            'nome' => 'required | min:3 | max:20 | unique:clientes',
         ]);
 
         $cliente = new Cliente();
