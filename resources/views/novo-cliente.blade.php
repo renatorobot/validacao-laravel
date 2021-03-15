@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email">E-mail do Cliente</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="E-mail do cliente">
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="E-mail do cliente">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Salvar</button>
                             </form>
